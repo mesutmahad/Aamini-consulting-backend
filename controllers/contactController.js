@@ -18,7 +18,7 @@ exports.submitContactForm = async (req, res) => {
 
     await transporter.sendMail({
       from: process.env.SMTP_EMAIL,
-      to: "engabdullahi642@gmail.com",
+      to: "mesutmahad@gmail.com",
       subject: "New Contact Form Submission",
       text: `New contact form submission:
       - Name: ${name}

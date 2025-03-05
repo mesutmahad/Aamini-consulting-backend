@@ -4,6 +4,7 @@ const cors = require("cors");
 const bodyParser = require("body-parser");
 const connectDB = require("./config/db");
 const contactRoutes = require("./routes/contactRoutes");
+const userRoutes = require("./routes/User");
 
 const app = express();
 
@@ -16,6 +17,7 @@ app.use(bodyParser.json());
 
 // Routes
 app.use("/api/contact", contactRoutes);
+app.use("/api/users", userRoutes);
 
 // Start Server
 const PORT = process.env.PORT || 5000;
